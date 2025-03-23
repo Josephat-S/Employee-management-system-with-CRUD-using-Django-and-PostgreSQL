@@ -1,8 +1,9 @@
-{% extends "employee_register/base.html"%}
+{% extends "employee_register/base.html" %}
+{% load crispy_forms_tags %}
 
-{% block content%}
+{% block content %}
 <form action="" method="post" autocomplete="off">
     {% csrf_token %}
-{{form}}
+    {{form|crispy}}
 </form>
-{% endblock %}
+{% endblock content %}
