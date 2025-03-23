@@ -1,5 +1,8 @@
 {% extends "employee_register/base.html"%}
 
 {% block content%}
-<p>We'll show Django elements to implement CRUD operations</p>
+<form action="" method="post" autocomplete="off">
+    {% csrf_token %}
+{{form}}
+</form>
 {% endblock %}
